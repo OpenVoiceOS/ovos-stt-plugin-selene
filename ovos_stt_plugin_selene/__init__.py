@@ -197,7 +197,15 @@ for lang, data in _langs.items():
 class SeleneSTT(STT):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.api = STTApi()
+        server_cfg = self.config_core.get("server", {})
+        url = self.config.get("host") \
+              or server_cfg.get("url") \
+              or "https://api.mycroft.ai"
+        version = self.config.get("version") \
+                  or server_cfg.get("version") \
+                  or "v1"
+        identity_file = self.config.get("identity_file")  # if None default file is used
+        self.api = STTApi(url, version, identity_file)
 
     def execute(self, audio, language=None):
         lang = language or self.lang
