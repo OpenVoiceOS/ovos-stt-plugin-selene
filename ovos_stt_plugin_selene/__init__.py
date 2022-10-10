@@ -1,6 +1,6 @@
 from ovos_plugin_manager.templates.stt import STT
 
-from selene_api import STTApi
+from ovos_backend_client.api import STTApi
 
 # taken from https://stackoverflow.com/questions/14257598/what-are-language-codes-in-chromes-implementation-of-the-html5-speech-recogniti/14302134#14302134
 _langs = {
