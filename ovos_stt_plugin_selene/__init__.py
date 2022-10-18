@@ -189,6 +189,7 @@ for lang, data in _langs.items():
     for region, code in data:
         SeleneSTTConfig[code] = [
             {"lang": code,
+             "priority": 60,
              "display_name": f"{lang} ({region})",
              "offline": False}
         ]
