@@ -1,6 +1,5 @@
-from ovos_plugin_manager.templates.stt import STT
-
 from ovos_backend_client.api import STTApi
+from ovos_plugin_manager.templates.stt import STT
 
 # taken from https://stackoverflow.com/questions/14257598/what-are-language-codes-in-chromes-implementation-of-the-html5-speech-recogniti/14302134#14302134
 _langs = {
@@ -189,8 +188,11 @@ for lang, data in _langs.items():
     for region, code in data:
         SeleneSTTConfig[code] = [
             {"lang": code,
-             "display_name": f"{lang} ({region})",
-             "offline": False}
+             "meta": {
+                 "priority": 60,
+                 "display_name": f"{lang} ({region})",
+                 "offline": False}
+             }
         ]
 
 
