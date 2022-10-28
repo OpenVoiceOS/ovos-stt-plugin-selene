@@ -13,7 +13,7 @@ setup(
     author_email='jarbasai@mailfence.com',
     license='Apache-2.0',
     packages=['ovos_stt_plugin_selene'],
-    install_requires=["selene_api",
+    install_requires=["ovos-backend-client",
                       "ovos-plugin-manager>=0.0.1"],
     zip_safe=True,
     classifiers=[
