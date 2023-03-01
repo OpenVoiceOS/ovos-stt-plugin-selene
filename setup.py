@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import os
 from setuptools import setup
 
 PLUGIN_ENTRY_POINT = 'ovos-stt-plugin-selene = ovos_stt_plugin_selene:SeleneSTT'
