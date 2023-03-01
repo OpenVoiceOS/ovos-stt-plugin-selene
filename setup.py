@@ -5,6 +5,9 @@ from setuptools import setup
 PLUGIN_ENTRY_POINT = 'ovos-stt-plugin-selene = ovos_stt_plugin_selene:SeleneSTT'
 CONFIG_ENTRY_POINT = 'ovos-stt-plugin-selene.config = ovos_stt_plugin_selene:SeleneSTTConfig'
 
+BASEDIR = os.path.abspath(os.path.dirname(__file__))
+
+
 def get_version():
     """ Find the version of the package"""
     version = None
