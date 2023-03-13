@@ -2,11 +2,15 @@
 
 ## [Unreleased](https://github.com/OpenVoiceOS/ovos-stt-plugin-selene/tree/HEAD)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-selene/compare/V0.0.2a1...HEAD)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-selene/compare/V0.0.3a3...HEAD)
 
 **Closed issues:**
 
 - Old reference to selene\_api [\#5](https://github.com/OpenVoiceOS/ovos-stt-plugin-selene/issues/5)
+
+## [V0.0.3a3](https://github.com/OpenVoiceOS/ovos-stt-plugin-selene/tree/V0.0.3a3) (2023-03-01)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-selene/compare/V0.0.2a1...V0.0.3a3)
 
 **Merged pull requests:**
 
