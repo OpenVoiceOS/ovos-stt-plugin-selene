@@ -1,5 +1,10 @@
-## Description
+## DEPRECATED - Description
 
+With mycroft's demise selene support is being deprecated, Selene will go down any day now
+
+please use https://github.com/OpenVoiceOS/ovos-stt-plugin-server instead
+
+_____________
 A stt plugin for ovos using [selene_api](https://github.com/OpenVoiceOS/selene_api)
 
 ## Install
